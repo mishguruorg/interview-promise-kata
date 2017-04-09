@@ -2,6 +2,7 @@ import test from 'ava'
 
 import Promise from './index'
 
-test('Promise exists', (t) => {
-  t.truthy(Promise)
+test('Can create a new Promise', (t) => {
+  const promise = new Promise()
+  t.truthy(promise)
 })
