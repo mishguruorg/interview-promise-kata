@@ -12,7 +12,7 @@
   "scripts": {
     "build": "pkg-build",
     "lint": "pkg-lint",
-    "test": "pkg-test",
+    "test": "ava test",
     "coverage": "pkg-coverage"
   },
   "babel": {
@@ -40,5 +40,8 @@
       "babel-register"
     ],
     "babel": "inherit"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0"
   }
 }
