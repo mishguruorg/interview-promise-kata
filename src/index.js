@@ -1,5 +1,3 @@
-delete global.Promise
-
 class Promise {
 }
 
