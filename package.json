@@ -12,7 +12,7 @@
   "scripts": {
     "build": "pkg-build",
     "lint": "pkg-lint",
-    "test": "ava test",
+    "test": "pkg-test",
     "coverage": "pkg-coverage"
   },
   "babel": {
