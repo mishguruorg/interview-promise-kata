@@ -7,39 +7,15 @@
   "author": "George Czabania <george@czabania.com>",
   "license": "MIT",
   "dependencies": {
-    "@mishguru/package": "^3.3.0"
+    "@mishguru/package": "^4.1.0"
   },
   "scripts": {
     "build": "pkg-build",
     "lint": "pkg-lint",
-    "test": "pkg-test",
+    "test": "cross-env NODE_ENV=test_local pkg-test",
     "coverage": "pkg-coverage"
   },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
-    ],
-    "plugins": [
-      [
-        "transform-object-rest-spread",
-        {
-          "useBuiltIns": true
-        }
-      ]
-    ]
-  },
-  "ava": {
-    "require": [
-      "babel-register"
-    ],
-    "babel": "inherit"
-  },
-  "devDependencies": {}
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
 }
