@@ -7,7 +7,7 @@
   "author": "George Czabania <george@czabania.com>",
   "license": "MIT",
   "dependencies": {
-    "@mishguru/package": "^4.1.0"
+    "@mishguru/package": "^4.3.1"
   },
   "scripts": {
     "build": "pkg-build",
